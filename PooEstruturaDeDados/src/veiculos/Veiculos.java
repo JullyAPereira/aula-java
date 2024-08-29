@@ -8,7 +8,23 @@ public class Veiculos {
 	private int eixos;
 	private int carga;
 	
+	//constructor use fields
 	
+	public Veiculos(String marca, String modelo, int ano, int potencia, int eixos, int carga) {
+		super();
+		this.marca = marca;
+		this.modelo = modelo;
+		this.ano = ano;
+		this.potencia = potencia;
+		this.eixos = eixos;
+		this.carga = carga;
+	}
+	//generate toString
+	@Override
+	public String toString() {
+		return "Veiculos [marca=" + marca + ", modelo=" + modelo + ", ano=" + ano + ", potencia=" + potencia
+				+ ", eixos=" + eixos + ", carga=" + carga + "]";
+	}
 	public String getMarca() {
 		return marca;
 	}
